@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Focus Bubble</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>🫧 Focus Bubble</h1>
+
+  <div class="controls">
+    <input type="number" id="minutesInput" value="25" min="1" />
+    <button onclick="startFocus()">Start Focus</button>
+    <button onclick="stopFocus()">Stop</button>
+  </div>
+
+  <div id="overlay">
+    <div id="bubble">
+      <span id="time">25:00</span>
+    </div>
+  </div>
+
+  <h2>Session History</h2>
+  <ul id="history"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
